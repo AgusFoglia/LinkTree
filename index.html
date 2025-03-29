@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="icon" href="iconos/icono_pagina.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #141E30, #243B55);
+            color: white;
+            text-align: center;
+        }
+
+        h1, h2 {
+            background: rgba(74, 87, 105, 0.9);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 2px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+            display: inline-block;
+        }
+
+        
+        .pfp {
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+        
+        .ejercicio-tablas{
+            background: rgba(74, 87, 105, 0.9);
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+        }
+        .social-icons img {
+            transition: transform 0,3s ease;
+            
+        }
+        .social-icons a{
+            padding: 8px;
+        }
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mi nombre es Agustin Foglia</h1> <br>
+    <h2>Esta es mi página</h2>
+    <br>
+
+    <img src="imagenes/index/pfp.jpeg" alt="Foto mia" width="300" class="pfp">
+    <blockquote><b>Foto de mis vacaciones.</b></blockquote>
+    
+
+    <a href="tablaschanged.html" class="ejercicio-tablas">
+        EJERCICIO TABLAS
+    </a>
+    
+
+    <p><b>Estas son tres páginas que me gustan y utilizo frecuentemente:</b></p>
+    <div class="social-icons">
+        <a href="http://cariverplate.com.ar/" target="_blank">
+            <img src="imagenes/index/river.png" alt="Escudo River" width="40">
+        </a>
+        <a href="https://store.steampowered.com/?l=spanish" target="_blank">
+            <img src="imagenes/index/steam.png" alt="Steam Logo" width="80">
+        </a>
+        <a href="https://x.com/home" target="_blank">
+            <img src="imagenes/index/twitter.png" alt="Twitter Logo" width="55">
+        </a>
+    </div>
+</body>
+</html>
+
