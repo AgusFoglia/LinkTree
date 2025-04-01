@@ -6,98 +6,13 @@
     <title>Mi página web</title>
     <link rel="icon" href="iconos/icono_pagina.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #141E30, #243B55); /* Degradado */
-            color: white;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="stylestablas.css">
 
-        /* Botón volver */
-        .inicio {
-            display: inline-block;
-            background: #ff4b5c;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .inicio:hover {
-            background: #ff6b7c;
-        }
-         
-        .tablas {
-            display: inline-block;
-            background: #ff4b5c;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .tablas:hover {
-            background: #ff6b7c;
-        }
-
-        /* Contenedor del título */
-        .titulo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        /* Imagen redonda */
-        .titulo-container img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border: 3px solid white;
-        }
-
-        /* Tablas */
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(5px);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        th, td {
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 10px;
-        }
-
-        th {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        tr:nth-child(even) {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Imágenes de los discos */
-        td img {
-            border-radius: 5px;
-        }
-    </style>
 </head>
 
-<body>
+<body id="Inicio">
     <br>
-    <a href="index.html" class="inicio">Inicio</a> 
+    <a href="index.html" class="inicio">Inicio</a>
 
     <div class="titulo-container">
         <h1><strong>Álbumes de Bad Bunny🐰</strong></h1>
@@ -235,6 +150,12 @@
             <td>Álbum con canciones que no iban a salir</td>
         </tr>
     </table>
-
+    
+    <br>
+    <h2>
+        <a href="#Inicio" class="subir">⬆ Volver arriba ⬆</a>
+    
+    </h2>
+    <br>
 </body>
 </html>
