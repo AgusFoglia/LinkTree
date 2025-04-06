@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="icon" href="iconos/icono_pagina.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 60px;
+    top: 0;
+    z-index: 1000;
+    background: #141E30;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    display: inline;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+li:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+img{
+    background-color: white;
+}
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 0;
+    height: calc(90vh - 300px); 
+}
+.imagenes {
+    text-align: center;
+}
+.imagenes img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.imagenes:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+blockquote{
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+</style>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="juego.html">Reiniciar Juego</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h1>
+        Segunda pregunta:
+    </h1>
+    <h2>
+        ¿Cuál de estas estructuras está en India?
+    </h2>
+
+    <div class="imagenes-container">
+        <a href="incorrecto.html">
+            <div class="imagenes">
+                <img src="imagenes/juego/palacio.avif" alt="Palavio de Versalles">
+                <blockquote>Palacio de Versalles</blockquote>
+            </div>
+        </a>
+        <a href="correcto2.html">
+            <div class="imagenes">
+                <img src="imagenes/juego/taj mahal.jpeg" alt="Taj Mahal">
+                <blockquote>Taj Mahal</blockquote>
+            </div>
+        </a>
+    </div>
+</body>
+
+
+</html>

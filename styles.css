@@ -1,10 +1,11 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #141E30, #243B55);
+    background: linear-gradient(to right, #141E30, #243B55); /* Degradado */
     color: white;
     text-align: center;
-}
+    scroll-behavior: smooth;
+    }
 
 h1, h2 {
     background: rgba(74, 87, 105, 0.9);
@@ -27,6 +28,7 @@ h1, h2 {
     display: inline-block;
     margin: 10px;
     transition: transform 0.3s ease;
+    
 }
 .mis-paginas a{
     padding: 8px;
@@ -39,6 +41,17 @@ h1, h2 {
 }
 .mis-paginas img:hover {
     transform: scale(1.2);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 60px;
+    top: 0;
+    z-index: 1000;
+    background: #141E30;
 }
 
 nav{

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="icon" href="iconos/icono_pagina.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 60px;
+    top: 0;
+    z-index: 1000;
+    background: #141E30;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    display: inline;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+li:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.siguiente-pregunta{
+    background: #28a745;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.siguiente-pregunta a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.siguiente-pregunta:hover{
+    transform: scale(1.3);
+}
+img{
+    border-radius: 3px;
+}
+.imagen:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
+</style>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="juego.html">Reiniciar Juego</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h1>😁¡Correcto!😁</h1> <br>
+    <img src="imagenes/juego/emoji.jpg" alt="Imagen emoji" width="500" class="imagen">
+
+    <p>Muy bien, seguí así</p>
+
+    <h2>
+        <a href="pregunta3.html" class="siguiente-pregunta">
+        Siguiente pregunta
+        </a>
+    </h2>
+
+</body>
+
+</html>
