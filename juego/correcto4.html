@@ -17,14 +17,14 @@
     scroll-behavior: smooth;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 h1 {
     font-size: 3em;
     margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 header{
@@ -66,31 +66,29 @@ li:hover{
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
+
+.siguiente-pregunta{
+    background: #28a745;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+.siguiente-pregunta a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.siguiente-pregunta:hover{
+    transform: scale(1.3);
+}
 img{
-    background-color: white;
-}
-.imagenes-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-top: 0;
-    height: calc(90vh - 300px); 
-}
-.imagenes {
-    text-align: center;
-}
-.imagenes img {
-    width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
     border-radius: 3px;
-}
-.imagenes:hover {
-    transform: scale(1.1);
     transition: transform 0.3s ease;
 }
+
 </style>
 <header>
     <nav>
@@ -98,31 +96,24 @@ img{
             <li><a href="index.html">Inicio</a></li>
             <li><a href="tabla.html">Tabla</a></li>
             <li><a href="juego.html">Reiniciar Juego</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
-    <h1>
-        Tercera pregunta:
-    </h1>
+    <h1>😝¡Correcto!😝</h1> <br>
+    <img src="../imagenes/juego/emoji.png" alt="Imagen emoji" width="500">
+
+    <p>Buenisimo! Has llegado al fin del juego</p>
+    <p>Gracias por participar</p>
+
     <h2>
-        ¿Cuál de estas banderas es la de Suecia?
+        <a href="../juego.html" class="siguiente-pregunta">
+        Iniciar de vuelta
+        </a>
     </h2>
 
-    <div class="imagenes-container">
-        <a href="correcto3.html">
-            <div class="imagenes">
-                <img src="imagenes/juego/suecia.svg" alt="Bandera Suecia">
-            </div>
-        </a>
-        <a href="incorrecto.html">
-            <div class="imagenes">
-                <img src="imagenes/juego/finlandia.png" alt="Bandera Finlandia">
-            </div>
-        </a>
-    </div>
 </body>
-
 
 </html>

@@ -7,7 +7,7 @@ body {
     scroll-behavior: smooth;
 }
 
-header{
+.header{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +18,14 @@ header{
     background: #141E30;
 }
 
-nav{
+.header nav{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
 }
 
-ul{
+.header ul{
     list-style: none;
     margin: 10px;
     padding: 10px;
@@ -33,18 +33,18 @@ ul{
     gap: 20px;
 }
 
-li{
+.header li{
     display: inline;
 }
 
-li a{
+.header li a{
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s ease;
 }
 
-li:hover{
+.header li:hover{
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }

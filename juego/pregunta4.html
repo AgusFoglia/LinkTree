@@ -66,9 +66,7 @@ li:hover{
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
-img{
-    background-color: white;
-}
+
 .imagenes-container {
     display: flex;
     justify-content: center;
@@ -79,12 +77,17 @@ img{
 }
 .imagenes {
     text-align: center;
+    background-color: none;
 }
 .imagenes img {
     width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+.imagenes:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 blockquote{
     margin-top: 10px;
@@ -98,6 +101,7 @@ blockquote{
             <li><a href="index.html">Inicio</a></li>
             <li><a href="tabla.html">Tabla</a></li>
             <li><a href="juego.html">Reiniciar Juego</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
         </ul>
     </nav>
 </header>
@@ -107,19 +111,19 @@ blockquote{
         Cuarta y Última pregunta:
     </h1>
     <h2>
-        ¿Qué equipo PERDIÓ la final mas importante de la historia?
+        ¿Qué equipo PERDIÓ la final más importante de la historia?
     </h2>
 
     <div class="imagenes-container">
-        <a href="incorrecto2.html">
+        <a href="../juego/incorrecto2.html">
             <div class="imagenes">
-                <img src="imagenes/index/river.png" alt="River Plate">
+                <img src="../imagenes/index/river.png" alt="River Plate">
                 <blockquote>River Plate</blockquote>
             </div>
         </a>
-        <a href="correcto4.html">
+        <a href="../juego/correcto4.html">
             <div class="imagenes">
-                <img src="imagenes/juego/boca.png" alt="Boca Juniors">
+                <img src="../imagenes/juego/boca.png" alt="Boca Juniors">
                 <blockquote>Boca Juniors</blockquote>
             </div>
         </a>
