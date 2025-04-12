@@ -8,7 +8,7 @@ body {
 
 main {
     display: flex;
-    min-height: calc(100vh - 120px); /* resto del header y footer */
+    /* min-height: calc(100vh - 120px); resto del header y footer */
 }
 
 a {
@@ -90,15 +90,10 @@ a {
     padding: 6px;
 }
 
-
 .footer {
     background: #141E30;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 
@@ -115,22 +110,20 @@ a {
     width: 250px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    margin: 20px 0;
+    margin: 20px ;
 }
 
 .contenido-cancion {
     padding: 20px;
     text-align: center;
+    margin: 0 auto;   
+    
 }
 
-video {
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
+
 
 .letra, .info-extra, .opinion {
-    margin: 20px auto;
+    margin: 20px ;
     width: 80%;
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;

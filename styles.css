@@ -89,9 +89,6 @@ h1, h2 {
     background: #141E30;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     margin-top: 50px;
 }
