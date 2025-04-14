@@ -1,14 +1,14 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #141E30, #243B55); /* Degradado */
+    background: linear-gradient(to right, #141E30, #243B55); 
     color: white;
     scroll-behavior: smooth;
 }
 
 main {
     display: flex;
-    /* min-height: calc(100vh - 120px); resto del header y footer */
+    min-height: calc(100vh - 120px); 
 }
 
 a {
@@ -80,7 +80,6 @@ a {
 }
 .aside a:hover {
     background-color: rgba(255, 255, 255, 0.15);
-
 }
 .aside a.active {
     background-color: #8e44ad;
@@ -110,29 +109,17 @@ a {
     width: 250px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    margin: 20px ;
+    margin: 20px;
 }
 
 .contenido-cancion {
+    width: 60%;
     padding: 20px;
     text-align: center;
     margin: 0 auto;   
-    
 }
 
 
-
-.letra, .info-extra, .opinion {
-    margin: 20px ;
-    width: 80%;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: left;
-}
-
-.letra h3, .info-extra h3, .opinion h3 {
-    color: #00ffcc;
-    margin-bottom: 10px;
-}
+  
+  
 
