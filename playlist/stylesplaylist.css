@@ -94,15 +94,27 @@ a {
     color: white;
     text-align: center;
     width: 100%;
+    padding: 20px 10px;
+    font-size: 14px;
+    align-items: center;
+    gap: 10px;
 }
 
-/* Contenido principal */
+.redes a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+}
+
+/* playlist.html */
 .contenido-album {
     width: 80%;
-    padding: 30px;
-    box-sizing: border-box;
+    padding: 50px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.03);
 }
 
 .portada {
@@ -112,13 +124,27 @@ a {
     margin: 20px;
 }
 
-.contenido-cancion {
-    width: 60%;
-    padding: 20px;
+.cancion {
+    margin: 20px auto;
+    background-color: #1f2a40;
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px;
+    height: 90%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
     text-align: center;
-    margin: 0 auto;   
-}
+  }
 
+.cancion .letra {
+    font-style: italic;
+    color: #ffffff;
+  }
+  
+.cancion .dato {
+    color: #cccccc;
+  }
+  
 
   
   
