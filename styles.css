@@ -1,7 +1,7 @@
 body {
     margin: 0;
     margin-top: 9%;
-    background-color: grey;
+    background: linear-gradient(to right, #2c3e50, #4ca2af9c);
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,7 @@ p {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .redes {
@@ -59,13 +60,27 @@ p {
     background-color: #285c63;
     color: white;
     padding: 20px 20px;
-    width: 500px;
+    width: 350px;
     border-radius: 30px;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
 }  
 .TPS a:hover {
     background-color: #008c9e;
+    transform: scale(1.05);
 }
+ /* .TPS a {
+   
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.TPS a:hover {
+    background-color: #00aab3;
+    transform: translateY(-4px);
+} */
+
