@@ -14,13 +14,11 @@ header{
 h1{
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 5px;
 }
 
 p {
     font-size: 1.3rem;
     font-weight: 350;
-    margin-bottom: 30px;
 }
 
 .foto-perfil {
@@ -28,7 +26,6 @@ p {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -36,7 +33,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 25px;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
 }
 
 .redes img {
@@ -73,14 +70,3 @@ p {
     background-color: #008c9e;
     transform: scale(1.05);
 }
- /* .TPS a {
-   
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
-
-.TPS a:hover {
-    background-color: #00aab3;
-    transform: translateY(-4px);
-} */
-
