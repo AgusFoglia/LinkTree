@@ -186,10 +186,15 @@ body {
     color: #3f0d99;
     font-weight: bold;
     font-size: 1rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 2px solid #3f0d99;
+    border-radius: 8px;
 }
 .volver-inicio:hover {
-    color: #6f4bc9;
+    background-color: #3f0d99;
+    color: white;
+    transform: scale(1.05);
 }
 
 .contenido-articulo {
@@ -199,8 +204,8 @@ body {
 }
 
 .imagen-articulo {
-    width: 100%;
-    max-height: 500px;
+    width: 90%;
+    max-height: 400px;
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 2rem;
