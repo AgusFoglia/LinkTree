@@ -65,6 +65,12 @@ body {
 .nav-banner li a:hover {
     color: #d1b3ff;
 }
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
 
 .articulo {
     padding: 2rem;
