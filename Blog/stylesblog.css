@@ -44,7 +44,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: rgba(63, 13, 153, 0.6); /* violeta semitransparente */
+    background: rgba(63, 13, 153, 0.6);
     backdrop-filter: blur(4px);
     z-index: 10;
 }
@@ -228,4 +228,95 @@ body {
     line-height: 1.7;
     color: #333;
 }
+
+/* Estilos específicos del contenido del artículo */
+.articulo-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.articulo-contenido h2,
+.articulo-contenido h3 {
+    color: #3f0d99;
+    margin-top: 2rem;
+}
+
+.articulo-contenido p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Imagen destacada */
+.img-destacada {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    animation: fadeInZoom 0.8s ease;
+}
+
+/* Video */
+.video-articulo {
+    width: 100%;
+    margin: 2rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería de imágenes mejorada */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.galeria img {
+    width: 220px;
+    height: 150px;
+    object-fit: contain;
+    background-color: #f9f5ff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.galeria-item {
+    text-align: center;
+}
+
+.galeria-item p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: black;
+    font-weight: 500;
+}
+
+/* Botón volver con animación */
+.volver-inicio {
+    display: inline-block;
+    margin: 2rem 0;
+    text-decoration: none;
+    color: #3f0d99;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.volver-inicio:hover {
+    color: #6f4bc9;
+    transform: translateX(-5px);
+}
+
 
