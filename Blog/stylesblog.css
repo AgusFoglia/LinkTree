@@ -65,6 +65,7 @@ body {
 .nav-banner li a:hover {
     color: #d1b3ff;
 }
+
 .banner-container {
     position: relative;
     width: 100%;
@@ -181,7 +182,7 @@ body {
 
 .volver-inicio {
     display: inline-block;
-    margin: 2rem;
+    margin: 2rem 0;
     text-decoration: none;
     color: #3f0d99;
     font-weight: bold;
@@ -192,19 +193,14 @@ body {
     border-radius: 8px;
 }
 .volver-inicio:hover {
-    background-color: #3f0d99;
     color: white;
+    background-color: #3f0d99;
     transform: scale(1.05);
 }
 
-.contenido-articulo {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
 .imagen-articulo {
-    width: 90%;
+    display: block;
+    width: 100%;
     max-height: 400px;
     object-fit: cover;
     border-radius: 12px;
@@ -229,27 +225,22 @@ body {
     color: #333;
 }
 
-/* Estilos específicos del contenido del artículo */
 .articulo-contenido {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
     font-family: 'Poppins', sans-serif;
 }
-
 .articulo-contenido h2,
 .articulo-contenido h3 {
-    color: #3f0d99;
     margin-top: 2rem;
 }
-
 .articulo-contenido p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
 }
 
-/* Imagen destacada */
 .img-destacada {
     width: 100%;
     max-height: 400px;
@@ -259,24 +250,23 @@ body {
     animation: fadeInZoom 0.8s ease;
 }
 
-/* Video */
 .video-articulo {
     width: 100%;
-    margin: 2rem 0;
+    max-width: 900px;
+    margin: 2rem auto;
+    display: block;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Galería de imágenes mejorada */
-.galeria {
+.galeria-circuitos {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
     margin: 2rem 0;
 }
-
-.galeria img {
+.galeria-circuitos img {
     width: 220px;
     height: 150px;
     object-fit: contain;
@@ -286,37 +276,37 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.galeria img:hover {
+.galeria-circuitos img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
-.galeria-item {
+.galeria-circuitos-item {
     text-align: center;
 }
-
-.galeria-item p {
+.galeria-circuitos-item p {
     margin-top: 0.5rem;
     font-size: 0.95rem;
     color: black;
     font-weight: 500;
 }
 
-/* Botón volver con animación */
-.volver-inicio {
-    display: inline-block;
+.galeria-river {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
     margin: 2rem 0;
-    text-decoration: none;
-    color: #3f0d99;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    justify-items: center;
 }
-
-.volver-inicio:hover {
-    color: #6f4bc9;
-    transform: translateX(-5px);
+.galeria-river img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
-
+.galeria-river img:hover {
+    transform: scale(1.03);
+}
 
