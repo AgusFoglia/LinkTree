@@ -7,7 +7,6 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   background-color: #0f1123;
-
 }
 
 .navbar {
@@ -130,4 +129,13 @@ body {
 }
 .btn-proyecto:hover {
   background-color: #5A4DCC;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #090a1a;
+  color: #aaa;
+  margin-top: 4rem;
 }

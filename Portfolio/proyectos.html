@@ -21,7 +21,7 @@
             <li><a href="portfolio.html#sobremi">Sobre Mí</a></li>
             <li><a href="portfolio.html#habilidades">Habilidades</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
             <li><a href="../index.html">LinkTree</a></li>
         </ul>
     </nav>
@@ -30,44 +30,44 @@
         <h2>Proyectos</h2>
         <div class="contenedor-proyectos">
             <div class="card-proyecto">
-                <h3>Calculadora</h3>
+                <h3>🔢📊 <br>Calculadora</h3>
                 <p>Una calculadora simple pero funcional hecha con HTML, CSS y JavaScript.</p>
                 <a href="proyectos/calculadora.html" class="btn-proyecto">Ver Proyecto</a>
             </div>
             <div class="card-proyecto">
-                <h3>Botonera de Sonidos</h3>
+                <h3>🔊▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:10<br>Botonera de Sonidos</h3>
                 <p>Una simple botonera de sonidos característicos de la Fórmula 1.</p>
                 <a href="proyectos/botonera.html" class="btn-proyecto">Ver Proyecto</a>
             </div>
             <div class="card-proyecto">
-                <h3>Galería de imágenes</h3>
+                <h3>🖼️🏆 <br>Galería de imágenes</h3>
                 <p>Una galería de imágenes de algunas copas o trofeos del fútbol mundial.</p>
                 <a href="proyectos/galeria.html" class="btn-proyecto">Ver Proyecto</a>
             </div>
         </div>
     </section>
 
+    <footer class="footer">
+        <p>© 2025 Agustin Foglia. Todos los derechos reservados.</p>
+        <a href="contacto.html">contactame</a>
+    </footer>
+
     <script>
         const toggleBtn = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
-        // Abrir/cerrar el menú con el botón
         toggleBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // evita que el click también se tome como "click afuera"
+            e.stopPropagation(); 
             navLinks.classList.toggle('show');
         });
 
-        // Evitar que hacer click dentro del menú lo cierre
         navLinks.addEventListener('click', (e) => {
             e.stopPropagation();
         });
 
-        // Cerrar el menú si se hace clic fuera
         document.addEventListener('click', () => {
             navLinks.classList.remove('show');
         });
     </script>
-
-
 </body>
 </html>

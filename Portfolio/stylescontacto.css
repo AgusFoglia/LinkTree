@@ -1,0 +1,127 @@
+body {
+  background-color: #0f1123;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.btn-volver-proyectos {
+  display: block;
+  margin: 2rem auto 1rem auto;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: 2px solid #7366FF;
+  color: #7366FF;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.btn-volver-proyectos:hover {
+  background-color: #7366FF;
+  color: #0f1123;
+}
+
+.contacto {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #7366FF;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contacto p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.formulario-contacto button {
+  background-color: #7366FF;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #5A4DCC;
+  color: #000;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #090a1a;
+  color: #aaa;
+  margin-top: 4rem;
+}
+
+.redes a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.redes a:hover {
+    transform: scale(1.2);
+}
+
+.contacto {
+  background-color: #0f1123;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#form-contacto input,
+#form-contacto textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+#form-contacto button {
+  background-color: #7366FF;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#form-contacto button:hover {
+  background-color: #5A4DCC;
+}

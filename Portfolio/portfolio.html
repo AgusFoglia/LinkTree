@@ -17,11 +17,11 @@
         </button>
 
         <ul class="nav-links">
-            <li><a href="portfolio.html">Inicio</a></li>
+            <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobremi">Sobre Mí</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
             <li><a href="../index.html">LinkTree</a></li>
         </ul>
     </nav>
@@ -112,37 +112,36 @@
                 </p>
             </div>
             <div class="card-proyecto">
-                <h3>Objetivo</h3>
+                <h3>Galería de imágenes</h3>
                 <p>
-                    Este portfolio refleja mi camino en la materia de Diseño y Desarrollo Web, donde puse en práctica lo aprendido.
+                    Una breve galería de imágenes interactiva de algunas copas o trofeos de fútbol al rededor del mundo.
                 </p>
             </div>
         </div>
         <br><br>
     </section>
 
+    <footer class="footer">
+        <p>© 2025 Agustin Foglia. Todos los derechos reservados.</p>
+        <a href="contacto.html" class="contactame">contactame</a>
+    </footer>
 
     <script>
         const toggleBtn = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
-        // Abrir/cerrar el menú con el botón
         toggleBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // evita que el click también se tome como "click afuera"
+            e.stopPropagation(); 
             navLinks.classList.toggle('show');
         });
 
-        // Evitar que hacer click dentro del menú lo cierre
         navLinks.addEventListener('click', (e) => {
             e.stopPropagation();
         });
 
-        // Cerrar el menú si se hace clic fuera
         document.addEventListener('click', () => {
             navLinks.classList.remove('show');
         });
     </script>
-
-
 </body>
 </html>

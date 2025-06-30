@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="stylescontacto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Portfolio/imagenes/contacto.ico" type="image/x-icon">
+</head>
+<body>
+
+  <a href="portfolio.html" class="btn-volver-proyectos">⬅ Volver al Inicio</a>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>¿Querés contactarme? Completá el <br>formulario y te responderé lo antes posible.</p>
+    <div class="redes">
+      <a href="https://github.com/AgusFoglia" target="_blank">
+        <img src="imagenes/github.png" alt="Github Logo" width="34px">
+      </a>
+      <a href="https://instagram.com/agusfogliaa" target="_blank">
+        <img src="imagenes/ig.png" alt="Instagram Logo" width="34px">
+      </a>
+    </div><br>
+    <form id="form-contacto">
+      <input type="text" name="user_name" placeholder="Tu nombre" required>
+      <input type="email" name="user_email" placeholder="Tu email" required>
+      <textarea name="message" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje-exito" style="display:none;">¡Mensaje enviado correctamente!</p>
+  </section>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("jXwhQTt47fopMoiT-"); 
+
+    document.getElementById('form-contacto').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      emailjs.sendForm('TU_SERVICE_ID', template_498jin5, this)
+        .then(function() {
+          document.getElementById('mensaje-exito').style.display = 'block';
+          document.getElementById('form-contacto').reset();
+        }, function(error) {
+          alert('Hubo un error. Intenta de nuevo.', error);
+        });
+    });
+  </script>
+</body>
+</html>
