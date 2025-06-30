@@ -64,11 +64,9 @@ button {
     transition: background-color 0.2s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
-
 button:hover {
     background-color: #5A4DCC;
 }
-
 button:active {
     transform: scale(0.97);
     background-color: #4d42b3;
@@ -85,7 +83,6 @@ button:active {
     font-weight: 500;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .btn-volver-proyectos:hover {
     background-color: #5A4DCC;
     transform: translateX(-5px);
