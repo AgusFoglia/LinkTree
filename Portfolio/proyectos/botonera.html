@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Botonera de Sonidos</title>
+  <link rel="stylesheet" href="stylesbotonera.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Portfolio/imagenes/botonera.ico" type="image/x-icon">
+</head>
+
+<body>
+  <a href="/Portfolio/proyectos.html" class="btn-volver-proyectos">⬅ Volver a Proyectos</a>
+
+  <section class="botonera">
+    <img src="/Portfolio/imagenes/f1-logo.png" alt="F1 Logo">
+
+    <h1>Botonera de Sonidos <br>de la Fórmula 1</h1>
+    <p>Clikeá el que quieras escuchar⬇️</p>
+    <p>Si querés pausarlo, simplemente tocalo <br>de vuelta o presioná otro sonido distinto.</p><br>
+    <div class="contenedor-botones">
+      <button class="btn-sonido" data-sonido="sonido1">Auto pasando🏎️💨</button>
+      <button class="btn-sonido" data-sonido="sonido2">Box Box🗣️</button>
+      <button class="btn-sonido" data-sonido="sonido3">Sonido Radio🔊</button>
+      <button class="btn-sonido" data-sonido="sonido4">🔴Luces de largada🔴</button>
+      <button class="btn-sonido" data-sonido="sonido5">🛠️Pit stop🛠️</button>
+    </div>
+  </section>
+
+  <audio id="sonido1" src="/Portfolio/sonidos/auto pasando.mp3"></audio>
+  <audio id="sonido2" src="/Portfolio/sonidos/box box.mp3"></audio>
+  <audio id="sonido3" src="/Portfolio/sonidos/radio sound f1.mp3"></audio>
+  <audio id="sonido4" src="/Portfolio/sonidos/starting lights sound.mp3"></audio>
+  <audio id="sonido5" src="/Portfolio/sonidos/Pit stop.mp3"></audio>
+
+  <script src="botonera.js"></script>
+</body>
+</html>
