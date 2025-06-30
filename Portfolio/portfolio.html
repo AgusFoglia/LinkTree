@@ -11,17 +11,111 @@
 <body>
     <nav class="navbar">
         <h1 class="nombre">Agustin Foglia</h1>
+
+        <button class="menu-toggle" aria-label="Abrir menú"> 
+            ☰
+        </button>
+
         <ul class="nav-links">
             <li><a href="portfolio.html">Inicio</a></li>
-            <li><a href="#">Sobre Mí</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Habilidades</a></li>
+            <li><a href="#sobremi">Sobre Mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#">Contacto</a></li>
-            <li><a href="#">Volver al LinkTree</a></li>
+            <li><a href="../index.html">LinkTree</a></li>
         </ul>
     </nav>
 
     
+    <section class="intro" id="inicio">
+        <div class="intro-content">
+            <div class="intro-texto">
+                <h4>Hola, bienvenido</h4>
+                <h1>Soy Agustin Foglia</h1>
+                <p>Tengo 20 años, vivo en Capital Federal y soy estudiante de Gestión de TI. Me gusta el desarrollo web, la computación y los desafíos creativos.</p>
+                <a href="#contacto" class="btn-contacto">Contacto</a>
+            </div>
+            <div class="intro-img">
+            <img src="imagenes/foto perfil.jpeg" alt="Foto Agustin Foglia" />
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <h2>Sobre mí</h2>
+        <div class="cards-sobremi">
+            <div class="card-sobremi">
+                <h3>¿Quién soy?</h3>
+                <p>
+                    Soy Agustín Foglia, estudiante de la Licenciatura en Gestión de Tecnología de la Información en UADE.
+                </p>
+            </div>
+                <div class="card-sobremi">
+                <h3>Pasiones</h3>
+                <p>
+                    Me apasiona el desarrollo web, la tecnología y los proyectos que combinan creatividad con funcionalidad.
+                </p>
+            </div>
+                <div class="card-sobremi">
+                <h3>Objetivo</h3>
+                <p>
+                    Este portfolio refleja mi camino en la materia de Diseño y Desarrollo Web, donde puse en práctica lo aprendido.
+                </p>
+            </div>
+            <div class="card-sobremi">
+                <h3>Proyección</h3>
+                <p>
+                    Busco seguir creciendo profesionalmente y aplicar estos conocimientos en futuros desafíos.
+                </p>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <h2>Habilidades</h2>
+        <div class="contenedor-habilidades">
+            <div class="card-habilidad">
+                <img src="imagenes/python.png" alt="Python">
+                <h3>Python</h3>
+            </div>
+            <div class="card-habilidad">
+                <img src="imagenes/html.png" alt="HTML">
+                <h3>HTML5</h3>
+            </div>
+            <div class="card-habilidad">
+                <img src="imagenes/css.png" alt="CSS">
+                <h3>CSS3</h3>
+            </div>
+            <div class="card-habilidad">
+                <img src="imagenes/js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Abrir/cerrar el menú con el botón
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // evita que el click también se tome como "click afuera"
+            navLinks.classList.toggle('show');
+        });
+
+        // Evitar que hacer click dentro del menú lo cierre
+        navLinks.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Cerrar el menú si se hace clic fuera
+        document.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    </script>
 
 
 </body>

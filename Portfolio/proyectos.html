@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="stylesportfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagenes/icono.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="nombre">Agustin Foglia</h1>
+
+        <button class="menu-toggle" aria-label="Abrir menú"> 
+            ☰
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="portfolio.html">Inicio</a></li>
+            <li><a href="portfolio.html#sobremi">Sobre Mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="portfolio.html#habilidades">Habilidades</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="../index.html">LinkTree</a></li>
+        </ul>
+    </nav>
+
+    <section class="proyectos" id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="contenedor-proyectos">
+            <div class="card-proyecto">
+                <h3>Calculadora</h3>
+                <p>Una calculadora simple hecha con HTML, CSS y JavaScript.</p>
+                <a href="calculadora-base.html" class="btn-proyecto">Ver Proyecto</a>
+            </div>
+            <div class="card-proyecto">
+                <h3>Otro Proyecto</h3>
+                <p>Descripción del proyecto.</p>
+                <a href="#" class="btn">Ver Proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        // Abrir/cerrar el menú con el botón
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // evita que el click también se tome como "click afuera"
+            navLinks.classList.toggle('show');
+        });
+
+        // Evitar que hacer click dentro del menú lo cierre
+        navLinks.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Cerrar el menú si se hace clic fuera
+        document.addEventListener('click', () => {
+            navLinks.classList.remove('show');
+        });
+    </script>
+
+
+</body>
+</html>
